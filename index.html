@@ -18,7 +18,7 @@ section{padding:70px 0}h2{font-family:Georgia,serif;font-size:2.1rem;text-align:
 .svc{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
 .svc div{background:#fff;border:1px solid var(--line);border-top:4px solid var(--gold);border-radius:14px;padding:26px 16px;text-align:center;font-family:Georgia,serif;font-size:1.3rem;font-weight:700;color:#7a5a3a;box-shadow:0 4px 14px rgba(184,146,90,.08)}
 .blush{background:var(--blush)}
-.cals{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:22px}
+.cals{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px}
 .cal{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px;box-shadow:0 4px 16px rgba(58,50,54,.06)}
 .tag{display:inline-block;background:#fff4e3;color:#8a6a3a;border:1px solid var(--gold);font-size:.78rem;font-weight:700;padding:3px 10px;border-radius:20px;margin-bottom:8px}
 .cal h3{font-family:Georgia,serif;margin-bottom:12px}
@@ -30,6 +30,7 @@ section{padding:70px 0}h2{font-family:Georgia,serif;font-size:2.1rem;text-align:
 .opt{border:1px solid var(--line);border-radius:10px;padding:10px;margin-bottom:8px}.opt.on{border-color:var(--gold);background:#fffaf1}
 .spec{display:flex;align-items:center;gap:12px;border:1px solid var(--line);border-radius:12px;padding:10px;margin-bottom:8px}.av2{width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,var(--rg),var(--gold))}
 .strip{display:flex;gap:8px;overflow:hidden;margin-bottom:12px}.strip span{min-width:52px;text-align:center;border-radius:12px;padding:8px 0;background:#f6f2ef;font-size:.8rem;line-height:1.3}.strip .sel{background:var(--rg);color:#fff}
+.who{display:flex;align-items:center;gap:12px;margin-bottom:14px}.who h3{margin:0}.ini{width:52px;height:52px;border-radius:50%;color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex:none}.day{margin-bottom:10px}.day b{display:block;font-size:.9rem;margin-bottom:4px}.cal .btn{font-size:.85rem;padding:10px 18px}
 .note{font-size:.8rem;color:#8a7a80;margin-top:10px;font-style:italic}
 .info .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;text-align:center}.info h3{color:#7a5a3a;font-family:Georgia,serif}
 table{margin:auto;border-collapse:collapse}td{padding:3px 10px;text-align:left}
@@ -45,36 +46,19 @@ footer{background:var(--ink);color:#eee;text-align:center;padding:26px;font-size
 <div>Pedicures</div><div>Manicures</div><div>Gels</div><div>Eyebrow Waxing</div><div>Acrylics</div><div>Fills</div><div>Dip Powder</div><div>Nail Art</div><div>Polish Change</div><div>Kids' Manicures</div>
 </div></div></section>
 
-<section class="blush" id="booking"><div class="wrap"><div class="rule"></div><h2>Choose Your Booking Calendar</h2><p class="sub">Six example styles to choose from. These are static demos only and aren't connected to any booking system.</p><div class="cals">
-
-<div class="cal"><span class="tag">Style example 1, not live</span><h3>Monthly Grid</h3><div class="mgrid">
-<b>S</b><b>M</b><b>T</b><b>W</b><b>T</b><b>F</b><b>S</b>
-<span></span><span></span><span></span><span class="av">1</span><span class="av">2</span><span class="av">3</span><span>4</span>
-<span>5</span><span class="av">6</span><span class="av">7</span><span class="sel">8</span><span class="av">9</span><span class="av">10</span><span>11</span>
-<span>12</span><span class="av">13</span><span class="av">14</span><span class="av">15</span><span class="av">16</span><span class="av">17</span><span>18</span>
-<span>19</span><span class="av">20</span><span class="av">21</span><span class="av">22</span><span class="av">23</span><span class="av">24</span><span>25</span></div><p class="note">Pick a day, then a time.</p></div>
-
-<div class="cal"><span class="tag">Style example 2, not live</span><h3>Weekly Time Slots</h3><div class="wk">
-<b></b><b>Mon</b><b>Tue</b><b>Wed</b><b>Thu</b><b>Fri</b>
-<b>9am</b><span class="o">✓</span><span></span><span class="o">✓</span><span class="o">✓</span><span></span>
-<b>11am</b><span></span><span class="o">✓</span><span class="o">✓</span><span></span><span class="o">✓</span>
-<b>1pm</b><span class="o">✓</span><span class="o">✓</span><span></span><span class="o">✓</span><span class="o">✓</span>
-<b>3pm</b><span class="o">✓</span><span></span><span class="o">✓</span><span class="o">✓</span><span></span>
-<b>5pm</b><span></span><span class="o">✓</span><span class="o">✓</span><span></span><span class="o">✓</span></div><p class="note">See the whole week at a glance.</p></div>
-
-<div class="cal"><span class="tag">Style example 3, not live</span><h3>Available Times List</h3><p style="font-weight:600;margin-bottom:8px">Thursday</p><div class="times"><span>9:00 AM</span><span>9:30 AM</span><span class="sel">10:30 AM</span><span>12:00 PM</span><span>1:30 PM</span><span>3:00 PM</span><span>4:30 PM</span><span>6:00 PM</span></div><p class="note">Simple tap-a-time list.</p></div>
-
-<div class="cal"><span class="tag">Style example 4, not live</span><h3>Step-by-Step Wizard</h3><div class="steps"><span class="on">1 Service</span><span>2 Date</span><span>3 Time</span><span>4 Confirm</span></div>
-<div class="opt on">Pedicures</div><div class="opt">Manicures</div><div class="opt">Gels</div><p class="note">Guides guests one step at a time.</p></div>
-
-<div class="cal"><span class="tag">Style example 5, not live</span><h3>Specialist-First Picker</h3>
-<div class="spec"><div class="av2"></div><div><b>nail salon specialist name here</b><br><small>Next opening: Thu 10:30 AM</small></div></div>
-<div class="spec"><div class="av2"></div><div><b>nail salon specialist name here</b><br><small>Next opening: Thu 1:30 PM</small></div></div>
-<div class="spec"><div class="av2"></div><div><b>nail salon specialist name here</b><br><small>Next opening: Fri 9:00 AM</small></div></div><p class="note">Choose who you'd like first.</p></div>
-
-<div class="cal"><span class="tag">Style example 6, not live</span><h3>Compact Mobile Date Strip</h3><div class="strip">
-<span>Mon<br><b>19</b></span><span>Tue<br><b>20</b></span><span>Wed<br><b>21</b></span><span class="sel">Thu<br><b>22</b></span><span>Fri<br><b>23</b></span><span>Sat<br><b>24</b></span></div>
-<div class="times"><span>10:00</span><span class="sel">11:30</span><span>2:00</span><span>4:00</span></div><p class="note">Swipe-friendly and built for phones.</p></div>
+<section class="blush" id="booking"><div class="wrap"><div class="rule"></div><h2>Book With Your Favorite Stylist</h2><p class="sub">Demo examples only. These calendars are not connected to a booking system. Call to book.</p><div class="cals">
+<div class="cal" style="border-top:5px solid #c98f86"><span class="tag">Demo, not live</span>
+<div class="who"><div class="ini" style="background:#c98f86">S1</div><h3>Book with Stylist Name One</h3></div><div class="day"><b>Thu 22</b><div class="times"><span>9:00 AM</span><span>10:30 AM</span><span>1:00 PM</span></div></div><div class="day"><b>Fri 23</b><div class="times"><span>11:00 AM</span><span>2:00 PM</span><span>5:00 PM</span></div></div><div class="day"><b>Sat 24</b><div class="times"><span>10:00 AM</span><span>12:30 PM</span><span>3:00 PM</span></div></div>
+<a class="btn" style="background:#c98f86;margin-top:12px" href="tel:+17279438599">Call to book with Stylist Name One</a></div>
+<div class="cal" style="border-top:5px solid #b8925a"><span class="tag">Demo, not live</span>
+<div class="who"><div class="ini" style="background:#b8925a">S2</div><h3>Book with Stylist Name Two</h3></div><div class="day"><b>Thu 22</b><div class="times"><span>9:30 AM</span><span>11:00 AM</span><span>2:00 PM</span></div></div><div class="day"><b>Fri 23</b><div class="times"><span>12:30 PM</span><span>3:00 PM</span><span>6:00 PM</span></div></div><div class="day"><b>Sat 24</b><div class="times"><span>9:00 AM</span><span>11:30 AM</span><span>1:30 PM</span></div></div>
+<a class="btn" style="background:#b8925a;margin-top:12px" href="tel:+17279438599">Call to book with Stylist Name Two</a></div>
+<div class="cal" style="border-top:5px solid #9a8fb5"><span class="tag">Demo, not live</span>
+<div class="who"><div class="ini" style="background:#9a8fb5">S3</div><h3>Book with Stylist Name Three</h3></div><div class="day"><b>Thu 22</b><div class="times"><span>10:00 AM</span><span>12:30 PM</span><span>3:00 PM</span></div></div><div class="day"><b>Fri 23</b><div class="times"><span>11:30 AM</span><span>1:30 PM</span><span>4:00 PM</span></div></div><div class="day"><b>Sat 24</b><div class="times"><span>9:00 AM</span><span>10:30 AM</span><span>1:00 PM</span></div></div>
+<a class="btn" style="background:#9a8fb5;margin-top:12px" href="tel:+17279438599">Call to book with Stylist Name Three</a></div>
+<div class="cal" style="border-top:5px solid #7fa59a"><span class="tag">Demo, not live</span>
+<div class="who"><div class="ini" style="background:#7fa59a">S4</div><h3>Book with Stylist Name Four</h3></div><div class="day"><b>Thu 22</b><div class="times"><span>9:00 AM</span><span>11:30 AM</span><span>1:30 PM</span></div></div><div class="day"><b>Fri 23</b><div class="times"><span>10:30 AM</span><span>1:00 PM</span><span>3:30 PM</span></div></div><div class="day"><b>Sat 24</b><div class="times"><span>9:30 AM</span><span>11:00 AM</span><span>2:00 PM</span></div></div>
+<a class="btn" style="background:#7fa59a;margin-top:12px" href="tel:+17279438599">Call to book with Stylist Name Four</a></div>
 </div></div></section>
 
 <section class="info"><div class="wrap"><div class="rule"></div><h2>Visit Us</h2><p class="sub">&nbsp;</p><div class="grid">
